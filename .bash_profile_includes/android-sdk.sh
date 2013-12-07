@@ -1,8 +1,7 @@
 #!/bin/bash
 
-if [ -d "$HOME/android-sdk-macosx" ]; then
-	export ANDROID_HOME="$HOME/android-sdk-macosx"
-	export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
+if [ -d "/usr/local/opt/android-sdk" ]; then
+	export ANDROID_HOME="/usr/local/opt/android-sdk"
 fi
 
 if [ -z "$ANDROID_HOME" ]; then
